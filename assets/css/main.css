@@ -1488,10 +1488,10 @@ button,
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -moz-transform 0.2s ease;
+-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 0.2s ease;
+-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, -ms-transform 0.2s ease;
+transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease;
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
@@ -1515,7 +1515,8 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(245, 106, 106, 0.05); }
+    background-color: rgba(245, 106, 106, 0.05);  transform: scale(1.03);
+}}
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
