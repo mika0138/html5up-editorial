@@ -1516,7 +1516,7 @@ transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform
   button:hover,
   .button:hover {
     background-color: rgba(245, 106, 106, 0.05);  transform: scale(1.03);
-}}
+}
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
